@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "BUSINESS KING",
+        "price": "3000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/3CvXTRn/beautiful-luxury-outdoor-swimming-pool-hotel-resort-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "DELUXE ROOM",
+        "price": "1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/NWfQ7hB/elegant-hotel-room-with-big-bed-1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "JUNIOR SUITE",
+        "price": "1500",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/dMrSkK0/hammocks-with-palm-trees-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "DELUXE SUITE",
+        "price": "1800",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/mGVBxFC/luxury-bedroom-hotel-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "IN-ROOM ARRANGEMENTS",
+        "price": "1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/GMGG5xb/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table-2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "OUT-ROOM-ARRANGEMENTS",
+        "price": "3000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/Tqt6zjr/modern-studio-apartment-design-with-bedroom-living-space-1.jpg"
+    }
+]
