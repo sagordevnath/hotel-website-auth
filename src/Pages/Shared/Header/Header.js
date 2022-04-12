@@ -1,4 +1,6 @@
 import React from "react";
+import './Header.css'
+import logo from '../../../Images/logo.jpg'
 import {
   Button,
   Container,
@@ -7,12 +9,23 @@ import {
   Nav,
   Navbar,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
   return (
     <Navbar bg="info" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <img height="30px" width="90px" src={logo} alt="" />
+        </Navbar.Brand>
+        <Navbar.Brand href="#">Nath International</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,11 +33,13 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">HOME</Nav.Link>
-            <Nav.Link href="#action1">SERVICES</Nav.Link>
-            <Nav.Link href="#action1">ABOUT</Nav.Link>
-            <Nav.Link href="#action1">CONTACT</Nav.Link>
-            <Nav.Link href="#action1">LOGIN</Nav.Link>
+            <div className="navbar">
+            <Link to="/">HOME</Link>
+            <Link to="/services">SERVICES</Link>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/contact">CONTACT</Link>
+            { user ? <Link onClick={logout} to="/login">LOGOUT</Link> : <Link to="/login">LOG IN</Link>}
+            </div>
           </Nav>
           <Form className="d-flex">
             <FormControl
